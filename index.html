@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Weather Dashboard</h1>
+    </header>
+    <main>
+      <section id="current-weather">
+        <h2>Current Weather</h2>
+        <div id="current-details"></div>
+      </section>
+      <section id="forecast">
+        <h2>5-Day Forecast</h2>
+        <div id="forecast-cards"></div>
+      </section>
+      <section id="cities">
+        <h2>Search for a city</h2>
+        <form id="search-form">
+        <label for="city-input">City Name:</label>
+          <input
+            type="text"
+            id="city-input"
+            placeholder="Enter city name"
+             required
+          />
+          
+          <button type="submit">Search</button>
+        </form>
+        <div>
+        <button class="city" onclick="viewcity('atlanta')">Atlanta</button>
+        <button class="city" onclick="viewcity('denver')">Denver</button>
+        <button class="city" onclick="viewcity('seattle')">Seattle</button>
+        <button class="city" onclick="viewcity('san francisco')"> San Fransico</button>
+        <button class="city" onclick="viewcity('orlando')">Orlando</button>
+        <button class="city" onclick="viewcity('new york')">New York</button>
+        <button class="city" onclick="viewcity('chicago')">Chicago</button>
+        <button class="city" onclick="viewcity('austin')">Austin</button>
+    </div>
+      </section>
+    </main>
+    <footer>
+      <p>Weather Dashboard © 2025</p>
+    </footer>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
